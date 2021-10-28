@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Merriweather;
+  src: url(https://fonts.google.com/specimen/Merriweather);
+  font-weight: normal;
+}
+
+.class {
+  font-family: Merriweather;
+}
