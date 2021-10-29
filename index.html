@@ -3,9 +3,93 @@
   <head>
     <meta charset="utf-8">
     <title>KimDaye</title>
+    <script src='./static/js/jquery-3.6.0.js'></script>
+    <script src='./static/js/common.js'></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <class = "hello">hello world</class>
-    hello world
+    <div class="main">
+      <div class="home">
+        <a href="#"><span>Kim Daye</span></a>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Skills</li></a>
+            <a href="#"><li>Project</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="about">
+      <span class="aboutme">About Me<span>
+      <div class="profile">
+        <div class="myphoto">
+          <img src="./image/myphoto.jpg" alt="daye_IDphoto">
+        </div>
+        <div class="name">
+          <p class="english">Kim Daye</p>
+          <p class="korean">김다예</p>
+        </div>
+        <div class="intro">
+          <p class="english"> I am majoring in computer science at Hanyang ERICA university</p>
+          <p class="korean">한양대학교 ERICA 캠퍼스 소프트웨어 전공 김다예입니다.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="skills">
+      <span class="myskill">Skills</span>
+      <div class="progressbar">
+        <p>Python</p>
+        <div id="python">
+          <span class="guage">81%</span>
+        </div>
+        <p>C</p>
+        <div id="c">
+          <span class="guage">88%</span>
+        </div>
+        <p>C++</p>
+        <div id="cpp">
+          <span class="guage">92%</span>
+        </div>
+        <p>JAVA</p>
+        <div id="java">
+          <span class="guage">85%</span>
+        </div>
+        <p>HTML</p>
+        <div id="html">
+          <span class="guage">82%</span>
+        </div>
+        <p>CSS</p>
+        <div id="css">
+          <span class="guage">70%</span>
+        </div>
+        <p>JavaScript</p>
+        <div id="js">
+          <span class="guage">60%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <span class="myproject">Projects</span>
+      <div class="project_list">
+      </div>
+    </div>
+
+    <div class="contact">
+      <span class="contactme">Contact</span>
+    </div>
+
   </body>
 </html>

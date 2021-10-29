@@ -1,9 +1,174 @@
-@font-face {
-  font-family: Merriweather;
-  src: url(https://fonts.google.com/specimen/Merriweather);
-  font-weight: normal;
+body {
+  font-family: 'Merriweather', serif;
 }
 
-.class {
-  font-family: Merriweather;
+.korean{
+  font-family: 'Noto Serif KR', serif;
+}
+
+.main, .about, .skills, .project, .contact {
+  padding: 80px 0;
+  text-align: center;
+  margin : 0 auto;
+}
+
+.home{
+  font-weight: 150;
+  font-size:70px;
+  padding: 50px 0;
+}
+
+.home>a:hover{
+  cursor:pointer;
+}
+
+.home>a span {
+  padding: 0 20px;
+  position: relative;
+}
+
+.home>a span::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgb(200, 125, 220);
+}
+
+.home>a:hover span::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.menu {
+  width:100%;
+  font-size : 20px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+nav ul{
+  display:table;
+  height: 40px;
+  justify-content: space-around;
+  margin:0 auto;
+}
+
+nav ul a{
+  border-radius: 3%;
+  border-left: 1px solid;
+}
+
+nav ul li {
+  display:table-cell;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  border-radius: 3%;
+}
+
+nav ul a:first-child{
+  border-left: none;
+}
+
+nav ul a:hover li{
+  font-weight:bold;
+  background-color: rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.aboutme, .myskill, .myproject, .contactme {
+  position: relative;
+  font-size: 30px;
+  padding-bottom: 3px;
+}
+
+.aboutme::after, .myskill::after, .myproject::after, .contactme::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: rgba(0,0,0,0.8);
+}
+
+.about:hover, .skills:hover, .project:hover, .contact:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about:hover .aboutme::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.skills:hover .myskill::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.project:hover .myproject::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.contact:hover .contactme::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.myphoto>img {
+  border-radius: 2%;
+  margin: 100px 0 50px;
+}
+
+.name{
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.intro{
+  padding: 10px 0;
+  margin: 50px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.progressbar {
+  margin: 100px 0 50px;
+}
+
+.progressbar p {
+  line-height: 40px;
+  text-align: center;
+}
+
+.progressbar>div{
+  position: relative;
+  margin-bottom: 15px;
+  display:inline-block;
+  width:520px;
+  height:30px;
+  box-sizing:border-box;
+  border-radius: 20px;
+  border: 1px solid #d6d3d3;
+  background-color: #d6d3d3;
+}
+
+.guage{
+  text-align: right;
+  box-sizing: border-box;
+  position: absolute;
+  left:0;
+  line-height: 30px;
+  font-size: 15px;
+  width:0.5%;
+  height:30px;
+  border-radius:20px;
+  border: 1px solid rgb(200, 125, 220);
+  background-color:rgb(200, 125, 220);
 }
