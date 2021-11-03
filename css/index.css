@@ -7,9 +7,18 @@ body {
 }
 
 .main, .about, .skills, .project, .contact {
+  width: 100%;
+  margin : 0 auto;
   padding: 80px 0;
   text-align: center;
-  margin : 0 auto;
+}
+
+.main{
+  /* position: fixed; */
+  width: 100%;
+  /* left:0;
+  top: 0; */
+  text-align: center;
 }
 
 .home{
@@ -171,4 +180,53 @@ nav ul a:hover li{
   border-radius:20px;
   border: 1px solid rgb(200, 125, 220);
   background-color:rgb(200, 125, 220);
+}
+
+
+.linkwrap {background-color: lavender; padding:10px 20px;}
+.wrap {
+  padding-top:100px;
+  display: table;
+  text-align: center;
+  margin:0 auto;
+  table-layout: fixed;
+  vertical-align: middle;
+  height:100%;
+  align-items: center;
+}
+
+.card {display: table-cell; padding: 0px 50px ; height:100%;}
+
+label{
+    display: block;/*새 라인에서 시작*/
+    padding:5px;
+}
+label span{
+    display: inline-block;
+    width:90px;
+    text-align: right;
+    padding:10px;
+}
+input[type=text]{
+    color:black;
+    line-height: 20px;
+}
+
+form {padding-top: 50px; color:black;}
+
+input, textarea {
+  padding:5px 200px 5px 5px;
+}
+
+textarea {
+  vertical-align: bottom;
+}
+input:hover, textarea:hover{
+    background:aliceblue;
+}
+
+#submit {
+  padding:10px 30px;
+  background-color: lavender;
+  font-size: 20px;
 }
